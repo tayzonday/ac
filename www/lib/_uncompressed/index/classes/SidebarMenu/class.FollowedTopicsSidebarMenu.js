@@ -5,7 +5,7 @@
  */
 function FollowedTopicsSidebarMenu() {
 
-	this.title        = 'Followed Topics';
+	this.title        = 'Followed Circles';
 	this.itemIdPrefix = 'menu-followed-topic-';
 
 	// DOM

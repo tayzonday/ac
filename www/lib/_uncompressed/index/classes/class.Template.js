@@ -129,7 +129,7 @@ function Template() {
 
 		console.log('Template.setHeading(\'' + _text + '\')');
 
-		this.DOM.heading.innerHTML = _text;
+		this.DOM.heading.innerHTML = _text + '<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />';
 
 	}
 

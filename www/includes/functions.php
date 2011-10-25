@@ -159,7 +159,7 @@ function add_css($files) {
 function add_pre_inline_js($html) {
 	
 	global $tpl;
-
+	
 	$tpl->pre_inline_javascript .= $html;
 
 	return true;

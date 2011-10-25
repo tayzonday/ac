@@ -131,22 +131,22 @@ class Template {
 		switch(_COMPRESSED_JS_FILES) {
 		
 			case 0: // uncompressed
-			
-				$js = '';
+
+				$js = '<script>';
 				
 				$js .= file_get_contents(_ABSOLUTE_PATH . _URL_PATH_LIB . '_uncompressed/' . $tpl->name . '/includes/header_and_config.js');
 
-				foreach($this->javascript_includes as $file) {
-					$js .= file_get_contents(_ABSOLUTE_PATH . _URL_PATH_LIB . '_uncompressed/' . $file);
-				}
+//				foreach($this->javascript_includes as $file) {
+//					$js .= file_get_contents(_ABSOLUTE_PATH . _URL_PATH_LIB . '_uncompressed/' . $file);
+//				}
 
-				$js .= file_get_contents(_ABSOLUTE_PATH . _URL_PATH_LIB . '_uncompressed/' . $tpl->name . '/includes/general_functions.js');
-				$js .= file_get_contents(_ABSOLUTE_PATH . _URL_PATH_LIB . '_uncompressed/' . $tpl->name . '/includes/prototype_functions.js');
+//				$js .= file_get_contents(_ABSOLUTE_PATH . _URL_PATH_LIB . '_uncompressed/' . $tpl->name . '/includes/general_functions.js');
+//				$js .= file_get_contents(_ABSOLUTE_PATH . _URL_PATH_LIB . '_uncompressed/' . $tpl->name . '/includes/prototype_functions.js');
 				$js .= file_get_contents(_ABSOLUTE_PATH . _URL_PATH_LIB . '_uncompressed/' . $tpl->name . '/includes/footer.js');
+				
+				$js .= '</script>';
 
-				add_post_inline_js($js);
-
-				return '';
+				return $js;
 
 				break;
 			

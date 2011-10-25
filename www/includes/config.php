@@ -10,7 +10,7 @@ define('_FULL_DOMAIN', _SUBDOMAIN . '.' . _DOMAIN);
 define('_SITE_TITLE', 'Wirah (Atum)');
 
 // Update later with $_SERVER['SOMETHING']);
-define('_ABSOLUTE_PATH', '/Users/Wirah/Sites/Wirah/wirah-atum');
+define('_ABSOLUTE_PATH', '/Users/Wirah/Sites/AnonCircle/atum/ac/www');
 
 define('_SERVER_CODE', 'frontend1');
 define('_SITE_IS_LIVE', FALSE);

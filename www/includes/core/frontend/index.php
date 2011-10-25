@@ -56,13 +56,7 @@ $websocket_validation_token = new WebSocketValidationToken(array(
  a.h - followed threads
 */
 
-add_pre_inline_js('var a= {
-	a:' . ($my->is_logged_in ? 1 : 0) . ',
-	b:"' . $websocket_validation_token->hash . '",
-	c:"' . $session->hash . '",
-	d:' . $my->num_thread_replies . ',
-	e:' . $my->num_post_mentions . ',
-	f:');
+add_post_inline_js('new Circle({a:' . ($my->is_logged_in ? 1 : 0) . ',b:"' . $websocket_validation_token->hash . '",c:"' . $session->hash . '",d:' . $my->num_thread_replies . ',e:' . $my->num_post_mentions . ',f:');
 	
 $followed_topics_listing = new FollowedTopicListing;
 $followed_topics_listing->addWhere(FALSE, 'user_id', '=', $my->id);
@@ -85,7 +79,7 @@ if(sizeof($followed_topics_listing->rows) > 0) {
 	}
 }
 
-add_pre_inline_js(json_encode($followed_topics) . ",g:");
+add_post_inline_js(json_encode($followed_topics) . ",g:");
 
 $my_threads_listing = new ThreadListing;
 $my_threads_listing->addWhere(FALSE, 'user_id', '=', $my->id);
@@ -110,9 +104,9 @@ if(sizeof($my_threads_listing->rows) > 0) {
 }
 
 
-add_pre_inline_js(json_encode($my_threads)  . ",h:");
+add_post_inline_js(json_encode($my_threads)  . ",h:");
 
 $followed_threads = array();
 
-add_pre_inline_js(json_encode($followed_threads) . "};");
+add_post_inline_js(json_encode($followed_threads) . "});");
 

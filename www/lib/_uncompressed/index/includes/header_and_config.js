@@ -1,38 +1,62 @@
-// a = template_settings
-(function(_template_settings) { 
+(function() {
 
-	var Wirah = {
+  window.Circle = {
 
-		// Configuration
-		config:{
+    config: {
 
-			template:{
+      template:{},
 
-				userLoggedIn             : _template_settings.a,
-				webSocketValidationToken : _template_settings.b,
-				sessionHash              : _template_settings.c,
-				numTopicReplies          : _template_settings.d,
-				numPostMentions          : _template_settings.e,
-				followedTopics           : _template_settings.f,
-				myThreads                : _template_settings.g,
-				followedThreads          : _template_settings.h
-				
-			},
+      general:{
 
-			general:{
+        assetReleaseId     : 193842,
+        documentTitleSuffix: ' - Circle',
+        shortWeekdays      : ['Sun','Mon','Tues','Weds','Thurs','Fri','Sat'],
+        defaultFavicon     : '/assets/favicon/default.ico',
+        passwordMinLength  : 3,
+        passwordMaxLength  : 24,
+        threadTextMaxLength: 5000
 
-				assetReleaseId      : 193842,
-				documentTitleSuffix : ' - Wirah',
-				shortWeekdays       : ['Sun','Mon','Tues','Weds','Thurs','Fri','Sat'],
-				defaultFavicon      : '/assets/favicon/default.ico',
-				passwordMinLength   : 3,
-				passwordMaxLength   : 24,
-				threadTextMaxLength : 5000
+      }
+
+    },
+    
+    util: {
+    
+      randomNumber: function (min, max) {
+        return Math.random * (max - min) + min;
+      },
       
-			}
-			
-		},
+      addEvent: function (element, type, func, uc) {
+        if (element.addEventListener) { 
+          element.addEventListener(type, func, uc);
+        } else if (element.attachEvent) { 
+          element.attachEvent('on' + type, fund); 
+        } else {
+          element['on' + type] = func;
+        }
+      }
+    
+    },
+    
+    init: function () {
+    
+      alert('Yo');
 
+    }
+
+  }
+  
+  Circle.util.addEvent(window, 'load', Circle.init, false);
+
+
+
+  // Classes
+  
+  
+
+
+    
+/*    
 		init: function () {
     
     		console.log('Wirah.init()');
@@ -64,3 +88,4 @@
 	};
   
 	// Classes
+*/

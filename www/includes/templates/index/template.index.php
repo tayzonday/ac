@@ -159,9 +159,9 @@ $o .= '<body>';
 //Test' . $tpl->displayContent('sidebar') . '
 //		' . $tpl->displayContent('main') . '</div>
 
-$o .= $tpl->displayPreInlineJavascript();
+//$o .= $tpl->displayPreInlineJavascript();
 $o .= $tpl->displayJavascriptIncludes();
-$o .= $tpl->displayPostInlineJavascript();
+//$o .= $tpl->displayPostInlineJavascript();
 
 $o .= '</body>';
 $o .= '</html>';

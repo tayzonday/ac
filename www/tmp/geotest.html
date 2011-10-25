@@ -1,0 +1,21 @@
+<html>
+
+
+
+<script>
+
+	if(navigator.geolocation) {
+		browserSupportFlag = true;
+		navigator.geolocation.getCurrentPosition(function(position) {
+			initialLocation = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
+			map.setCenter(initialLocation);
+		}, function() {
+			alert('Either W3C Geolocation not supported OR the user clicked Deny');
+		});
+	}
+
+
+</script>
+
+
+</html>

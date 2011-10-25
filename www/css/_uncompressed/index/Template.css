@@ -1,0 +1,71 @@
+/* Header */
+body > header {  }
+body > header > div:first-child { border-bottom:4px solid rgba(255, 255, 255, 0.75);height:34px;background-color:#000;background-image:url('/assets/index/header-bg.png');background-repeat:repeat-x;/*border-top:1px solid #888;*/position:fixed;width:100%;z-index:100;box-shadow: 0px 10px 10px #fff; }
+body > header > div:first-child > div:first-child { /*border:1px solid red;*/min-width:960px;max-width:90%;margin:0 auto;position:relative; }
+
+/* topBarLeft */
+body > header > div:first-child > div:first-child > div:first-child { width:180px;text-align:center;padding-top:0px;position:absolute;top:0;left:0; }
+
+/* Thread replies */
+body > header > div:first-child > div:first-child > div:first-child > a:first-child { border:1px solid transparent;position:absolute;left:19px;top:0;width:30px;height:32px;background-image:url('/assets/index/icon-thread-replies-off.png');background-repeat:no-repeat;background-position:6px 4px; }
+
+body > header > div:first-child > div:first-child > div:first-child > a:first-child:link, 
+body > header > div:first-child > div:first-child > div:first-child > a:first-child:visited, 
+body > header > div:first-child > div:first-child > div:first-child > a:first-child:hover, 
+body > header > div:first-child > div:first-child > div:first-child > a:first-child:active { text-decoration:none; }
+body > header > div:first-child > div:first-child > div:first-child > a:first-child:hover { border:1px solid transparent;background-color:rgba(0,0,0,0.25); }
+
+body > header > div:first-child > div:first-child > div:first-child > a:first-child.selected { background-image:url('/assets/index/icon-thread-replies-on.png');background-color:#fff;border-top:1px solid #000;border-left:1px solid #000;border-right:1px solid #000; }
+
+body > header > div:first-child > div:first-child > div:first-child > a:first-child > span { position:absolute;top:3px;right:16px;border-right:1px solid #4e5c51;border-bottom:1px solid #4e5c51;background-color:#15b637;color:#fff;-webkit-border-radius:3px;font-size:9px;padding:0 3px 0 3px;margin:0 0 0 17px;font-family:Lucida Grande, Tahoma, sans-serif; } /* Num */
+
+/* FIX BELOW LATER */
+#thread-replies-popup { height:100px;display:none;width:250px;background-color:#fff;border-left:1px solid #000;border-bottom:1px solid #000;border-right:1px solid #000;text-align:left;position:absolute;top:41px;left:19px;padding:5px;z-index:10; }
+
+/* Logo */
+body > header > div:first-child > div:first-child > div:first-child > a:nth-child(3) { position:absolute;left:65px;top:0;background-image:url('/assets/index/white-logo.png');background-repeat:no-repeat;background-position:8px 6px;width:47px;height:32px; }
+body > header > div:first-child > div:first-child > div:first-child > a:nth-child(3):hover { background-color:rgba(0,0,0,0.25); }
+
+/* Post mentions */
+body > header > div:first-child > div:first-child > div:first-child > a:nth-child(4) { border:1px solid transparent;position:absolute;left:126px;top:0;width:30px;height:32px;background-image:url('/assets/index/icon-post-mentions-off.png');background-repeat:no-repeat;background-position:4px 6px; }
+
+body > header > div:first-child > div:first-child > div:first-child > a:nth-child(4) > span { position:absolute;top:3px;left:-1px;border-left:1px solid #c00;border-bottom:1px solid #c00;background-color:#f00;color:#fff;-webkit-border-radius:3px;font-size:9px;padding:0 3px 0 3px;margin:0 0 0 17px; font-family:Lucida Grande, Tahoma, sans-serif; } /* Num */
+
+body > header > div:first-child > div:first-child > div:first-child > a:nth-child(4):link, 
+body > header > div:first-child > div:first-child > div:first-child > a:nth-child(4):visited, 
+body > header > div:first-child > div:first-child > div:first-child > a:nth-child(4):hover, 
+body > header > div:first-child > div:first-child > div:first-child > a:nth-child(4):active { text-decoration:none; }
+body > header > div:first-child > div:first-child > div:first-child > a:nth-child(4):hover { border:1px solid transparent;background-color:rgba(0,0,0,0.25); }
+
+body > header > div:first-child > div:first-child > div:first-child > a:first-child.selected { background-image:url('/assets/index/icon-post-mentions-on.png');background-color:#fff;border-top:1px solid #000;border-left:1px solid #000;border-right:1px solid #000; }
+
+/* Fix below later */
+#post-mentions-popup { height:100px;display:none;width:250px;background-color:#fff;border-left:1px solid #000;border-bottom:1px solid #000;border-right:1px solid #000;text-align:left;position:absolute;top:41px;left:126px;padding:5px;z-index:10; }
+
+
+/* topBarRight */
+body > header > div:first-child > div:first-child > div:nth-child(2) { position:absolute;top:0;right:0;text-align:right;color:#fff; }
+
+body > header > div:first-child > div:first-child > div:nth-child(2) > ul { margin-top:5px;list-style-type:none;display:block;padding:3px 5px 0 0; }
+body > header > div:first-child > div:first-child > div:nth-child(2) > ul > li { display:inline;margin-right:15px; }
+body > header > div:first-child > div:first-child > div:nth-child(2) > ul > li > a:link,
+body > header > div:first-child > div:first-child > div:nth-child(2) > ul > li > a:visited,
+body > header > div:first-child > div:first-child > div:nth-child(2) > ul > li > a:hover,
+body > header > div:first-child > div:first-child > div:nth-child(2) > ul > li > a:active { text-decoration:none;color:#fff; }
+body > header > div:first-child > div:first-child > div:nth-child(2) > ul > li > a:hover { text-decoration:underline; }
+
+
+/* subBar */
+body > header > div:nth-child(2) { /*height:42px;*/height:30px;background-color:#f1f1f1;border-bottom:1px solid #ddd;border-top:4px solid #aaa;padding-top:0px; }
+
+body > header + div { /*border:1px solid red;*/height:100px; } /* Main */
+body > header + div > div { /*border:1px solid green;*/min-width:960px;max-width:90%;margin:0 auto;height:100px;position:relative; } /* Main Inner */
+
+body > header + div > div > aside:first-child { width:200px;position:absolute;top:0;left:0;height:100px;/*border-right:1px solid #eee;*/padding:18px 0 0 0px; } /* Left sidebar */
+
+body > header + div > div > div { margin:0 200px 0 200px;height:500px;padding:15px;border-left:1px solid #eee;border-right:1px solid #eee; } /* Content */
+body > header + div > div > div > h1 { font-size:18px;font-weight:normal;margin-bottom:17px; }
+
+body > header + div > div > aside:nth-child(3) { width:200px;position:absolute;top:0;right:0;height:100px;/*border-left:1px solid #eee;*/padding:18px 0px 0 0; } /* Right sidebar */
+
+

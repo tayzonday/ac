@@ -1,0 +1,43 @@
+/* Sidebar */
+
+aside.left menu h4 { font-size:15px;margin-bottom:12px;padding-left:12px;font-weight:normal; }
+
+aside.left menu ul { list-style-type:none;font-size:13px; }
+
+
+aside.left menu ul li { display:box;display:-webkit-box;display:-moz-box;box-orient:horizontal;-webkit-box-orient: horizontal;-moz-box-orient: horizontal;margin-bottom:0px;  position:relative;width:200px;max-width:200px; }
+
+
+
+
+aside.left menu ul li a { padding:6px 3px 6px 36px;cursor:pointer;box-flex:1;-webkit-box-flex:1;-moz-box-flex:1;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;display:block;/*background-image:url('/assets/index/16x16default.png');*/background-repeat:no-repeat;text-decoration:none;background-position:12px 6px;cursor:pointer; }
+aside.left menu ul li a:link { color:#333;}
+aside.left menu ul li a:visited { color:#333;text-decoration:none; }
+aside.left menu ul li a:hover { color:#333;background-color:/*#eff7ef*/#f1f1f1;text-decoration:none; }
+aside.left menu ul li a:active { color:#333;background-color:#eff7ef;text-decoration:none; }
+aside.left menu ul li span { border:1px solid #d9ead8;font-size:9px;font-weight:bold;background-color:#d9ead8;text-align:center;padding:0 2px 0 2px;margin:0 0 -10px 0;-webkit-border-radius:3px;position:absolute;right:2px;top:4px;vertical-align:top; }
+
+
+
+/* TODO - Clean up / delete the shit below */
+
+
+
+#sidebar menu ul li.selected a:link    { background-color:#d9ead8; }
+#sidebar menu ul li.selected a:visited { background-color:#d9ead8; }
+#sidebar menu ul li.selected a:hover   { background-color:#d9ead8; }
+#sidebar menu ul li.selected a:active  { background-color:#d9ead8; }
+
+#menu-followed-threads { margin-top:20px; }
+#menu-theme { margin-top:20px; }
+#menu-followed-topics-show-more a { background-image:url('/assets/topic-icons/icon-menu-expand-16x16.png'); }
+#menu-followed-topics-find-more a { background-image:url('/assets/topic-icons/icon-menu-plus-16x16.png'); }
+
+a.menu-inline-link { font-size:12px;float:right;margin:-26px 15px 0 0; }
+
+
+
+
+
+
+

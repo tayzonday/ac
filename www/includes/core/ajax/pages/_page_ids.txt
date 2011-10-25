@@ -1,0 +1,12 @@
+1 - index
+2 - view_topic
+3 - view_thread
+4 - register
+5 - topics
+6 - registered
+7 - logout
+8 - logged_out
+9 - login
+10 - create_thread
+
+

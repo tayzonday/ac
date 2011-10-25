@@ -1,0 +1,234 @@
+<html>
+
+<style>
+p { margin:13px 0 13px 0; }
+
+body { margin:0;padding:0;font-family:"Lucida Grande",tahoma,sans-serif;font-size:11px;color:#333; }
+
+td { font-size:13px;vertical-align:top; }
+
+.right { float:right; }
+.left { float:left; }
+.hidden { display:none !important; }
+.invisible { visibility:hidden; }
+.clear { clear:both; }
+
+.px14 { font-size:14px; }
+.bold { font-weight:bold; }
+
+img { border-width:0px; }
+
+input[type=text], input[type=password], textarea { font-family:"Lucida Grande",tahoma,sans-serif;height:18px;width:200px;border:1px solid #afc7ae;padding:2px 3px 1px 3px; }
+button { font-family:"Lucida Grande",tahoma,sans-serif; }
+
+input.small { font-size:11px; }
+
+textarea { height:60px;padding:4px; }
+
+label { cursor:pointer; }
+
+input:focus, textarea:focus { outline-width:0; }
+
+/* 486f5a */
+
+/* Links */
+a:link    { color:#117743;text-decoration:none; }
+a:visited { color:#117743;text-decoration:none; }
+a:hover   { color:#117743;text-decoration:underline; }
+a:active  { color:#117743;text-decoration:underline; }
+
+a.black:link    { color:#000; }
+a.black:visited { color:#000; }
+a.black:hover   { color:#000; }
+a.black:active  { color:#000; }
+
+button { background:-webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);border:1px solid #AAA;padding:3px 12px 3px 12px;font-size:13px;color:#444;-webkit-border-radius:2px; }
+button:hover { background:-webkit-linear-gradient(#fefefe, #f8f8f8 40%, #e9e9e9);border-color: #999;color: #222;-webkit-border-radius:2px; }
+button:active { -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2);background: #ebebeb -webkit-linear-gradient(#f4f4f4, #efefef 40%, #dcdcdc);color: #333; }
+
+button[disabled] { -webkit-box-shadow: inset 0px 10px 6px rgba(0, 0, 0, 0.2);background: #ebebeb -webkit-linear-gradient(#f4f4f4, #efefef 40%, #dcdcdc);color: #333; } /* Same as button:active */
+
+button.small { font-size:11px;padding:1px 8px 2px 8px;margin-right:4px; }
+
+button.green { background-color:#00AE3E;color:#fff;border:1px solid #393;border-bottom:1px solid #277827;/*text-shadow:0 -1px 0 #008300;*/background:-webkit-linear-gradient(#34c75e 35%, #009736); }
+
+button.red { background-color:#c63738;color:#fff;border:1px solid #a33;border-bottom:1px solid #962c2c;/*text-shadow:0 -1px 0 #a72e2f;*/background:-webkit-linear-gradient(#f15c5d 35%, #c63738); }
+
+
+.no-threads { padding:30px 0;font-size:13px;color:#888;text-align:center; }
+
+
+
+
+/* ThreadListing */
+section.thread-listing { clear:both; }
+
+/* ThreadListing > Thread */
+section.thread-listing > article.thread { border-bottom:1px solid #ddd;padding:0px;clear:both;margin-bottom:20px;padding-bottom:30px; } /* root */
+section.thread-listing > article.thread > header > div { text-align:right;width:150px;float:left;margin:0 10px 5px 0;background-color:#fff;padding:2px 2px 2px 2px;border:1px solid #ddd; } /* thread image div */
+section.thread-listing > article.thread > header > div:hover { border:1px solid #afc7ae	; }
+section.thread-listing > article.thread > header > div img { max-width:150px;max-height:150px; }
+section.thread-listing > article.thread > header h3 { font-size:13px;margin:0; } /* Subject */
+section.thread-listing > article.thread > header > p { margin:3px 0 5px 0;margin:3px 0 0 0;border-bottom:1px dotted #ddd;padding-bottom:5px; } /* details line*/
+section.thread-listing > article.thread > header > p label { font-weight:bold;color:#117743; } /* name */
+section.thread-listing > article.thread > header > p span { color:#888;font-size:9px; }
+section.thread-listing > article.thread > header > p a { display:inline-block;font-size:9px;margin-left:5px; }
+section.thread-listing > article.thread > menu { margin-top:2px;padding-bottom:2px;border-bottom:1px dotted #ddd; }
+section.thread-listing > article.thread > menu > button { margin-right:0; }
+section.thread-listing > article.thread > p.omitted { color:#888;margin-top:8px; } /* omitted */
+
+/* PostListing > Post */
+article.post { width:auto;min-width:400px;border:0px solid #ddd;margin-bottom:5px;margin-left:0px;clear:both; }  /* root */
+article.post > div.inner { max-width:600px;word-wrap: break-word;margin-bottom:0px;padding:3px 5px 1px 5px;display:inline-block;border-right:1px solid #ddd;border-bottom:1px solid #ddd;background-color:#f4f4f4; } /* inner */
+article.post > div.inner > header > div { text-align:right;width:100px;float:left;margin:0 10px 5px 2px;background-color:#fff;padding:2px 2px 2px 2px;border:1px solid #ddd; } /* thread image div */
+article.post > div.inner > header > div:hover { border:1px solid #afc7ae	; }
+article.post > div.inner > header > div img { max-width:100px;max-height:150px; }
+article.post > div.inner > header > p { padding-bottom:5px;margin-top:0;margin-bottom:5px;padding-left:0;color:#888; } /* details */
+article.post > div.inner > header > p label { font-weight:bold;color:#117743; } /* name */
+article.post > div.inner > header > p span { color:#888;font-size:9px; }
+article.post > div.inner > header > p a { display:inline-block;font-size:9px;margin-left:5px; }
+article.post > div.inner > p { font-size:11px;padding-left:35px;padding-top:0px;margin-bottom:15px;margin-top:5px;margin-right:25px; } /* text */
+
+</style>
+
+<div style="border-left:1px solid #ccc;border-right:1px solid #ccc;margin-left:100px;width:600px;padding:20px;height:1000px;">
+
+<section class="thread-listing">
+	<!-- pagination -->
+	<article class="thread">
+		<header>
+			<div><a href="/Random/783"><img src="http://i.imgur.com/8PAMY.jpg"></a></div>
+			<p><input id="thread-12-checkbox" type="checkbox"></input> <label for="thread-12-checkbox">Anonymous</label> <span>43 secs ago</span> <a href="#">#302</a></span></p>
+		</header>
+		
+		<menu>
+			<button id="follow-thread-320-button" class="small">Follow</button>
+			<button id="thread-320-reply" class="small">Reply</button>	
+			<button class="small right">Report</button>	
+		</menu>
+	
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna massa, pellentesque egestas imperdiet vel, imperdiet et risus. Phasellus feugiat tortor vel nulla porta in mattis neque iaculis.<br /><br />Aenean quis purus elit. Sed aliquet luctus justo, sed consectetur neque ornare vitae. Phasellus dui turpis, rhoncus quis facilisis non, auctor in urna. Nunc feugiat mi eu erat vehicula eu auctor tellus viverra.</p>
+		<p class="omitted">4 posts and 2 images omitted. <a href="#">Click here to view</a>.</p>
+		
+		<section class="post-listing">
+			<article class="post">
+				<div class="inner">
+					<header>
+						<p><input id="post-344-checkbox" type="checkbox"></input> <label for="post-344-checkbox">Anonymous</label> <span>31 secs ago</span> <a name="123" href="/Random/783">#783</a></p>
+					</header>
+					<p>Some more shit. image included this time.,<br />Some more shit. image included this time.,<br />Some more shit. image included this time.,<br />Some more shit. image included this time.,<br />Some more shit. image included this time.,<br />Some more shit. image included this time.,<br />Some more shit. image included this time.,<br /></p>
+				</div>
+			</article>		
+
+			<article class="post" style="">
+				<div class="inner">
+					<header>
+						<p><input id="post-322-checkbox" type="checkbox"></input> <label for="post-322-checkbox">Anonymous</label> <span>31 secs ago</span> <a name="123" href="/Random/783">#783</a></p>
+						<div style="float:left;">
+							<a href="/Random/783"><img src="http://i.imgur.com/8PAMY.jpg"></a>
+						</div>
+					</header>
+					<p>Some more shit. image included this time.,<br />Some more shit. image included this time.,<br />Some more shit. image included this time.,<br />Some more shit. image included this time.,<br />Some more shit. image included this time.,<br />Some more shit. image included this time.,<br />Some more shit. image included this time.,<br /></p>
+				</div>
+			</article>		
+		</section>
+		
+
+	</article>
+	<div class="clear"></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<article class="thread">
+		<header>
+			<p>File: <a href="#">7239847289342.jpg</a> (1024 x 648)</p>
+			<div>
+				<a href="/Random/783"><img src="http://i.imgur.com/8PAMY.jpg"></a>
+			</div>
+			<!--<h3><a href="/Random/783">No subject is fine</a></h3>-->
+			<p>
+				<strong>Anonymous</strong> 1 day ago (Fri 27/05/2011 15:18:41) <a href="/Random/783">#783</a>
+			</p>
+		</header>
+		
+		<menu>
+			<button id="follow-thread-320-button" class="small" data-thread-id="320">Follow</button>
+			<button id="thread-320-reply" class="small">Reply</button>	
+			<button class="small right">Report</button>	
+		</menu>
+	
+		<p>why is it that</p>
+		<p class="omitted">4 posts and 2 image replies omitted. <a href="#">Click here to view</a>.</p>
+		
+		<section class="post-listing">
+			<article class="post">
+				<div class="inner">
+					<header>
+						<p><strong>Anonymous</strong> 1 day ago (Fri 27/05/2011 15:18:41) <a href="/Random/783">#783</a></p>
+						<a name="123"></a>
+						<p>Herp fucking derp</p>
+					</header>				
+				</div>			
+			</article>		
+		</section>
+	</article>
+	<div class="clear"></div>
+	
+	
+		
+	
+	<article class="thread">
+		<header>
+			<div>
+				<a href="/Random/783"><img src="http://i.imgur.com/8PAMY.jpg"></a>
+			</div>
+			<h3><a href="/Random/783">No subject is fine</a></h3>
+			<p>
+				<strong>Anonymous</strong> 1 day ago (Fri 27/05/2011 15:18:41) <a href="/Random/783">#783</a>
+			</p>
+		</header>
+		
+		<menu>
+			<button id="follow-thread-320-button" class="small" data-thread-id="320">Follow</button>
+			<button id="thread-320-reply" class="small">Reply</button>	
+			<button class="small right">Report</button>	
+		</menu>
+	
+		<p>why is it that</p>
+		<p class="omitted">4 posts and 2 image replies omitted. <a href="#">Click here to view</a>.</p>
+		
+		<section class="post-listing">
+			<article class="post">
+				<div class="inner">
+					<header>
+						<p><strong>Anonymous</strong> 1 day ago (Fri 27/05/2011 15:18:41) <a href="/Random/783">#783</a></p>
+						<a name="123"></a>
+						<p>Herp fucking derp</p>
+					</header>				
+				</div>			
+			</article>		
+		</section>
+	</article>
+	<div class="clear"></div>
+
+	
+</section>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+</html>

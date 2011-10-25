@@ -1,0 +1,11 @@
+body { background-color:#FFFFEE; }
+
+
+
+
+#sidebar menu ul li a:hover { background-color:#F0E0D6 }
+
+a:link    { color:navy; }
+a:visited { color:navy; }
+a:hover   { color:navy; }
+a:active  { color:navy; }

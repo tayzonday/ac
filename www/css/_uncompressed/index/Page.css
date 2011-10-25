@@ -1,0 +1,13 @@
+/* Pages */
+
+/* /login */
+form.login { margin:0px 0 0 0px;padding:0 0 0 10px;border-radius:5px;display:inline-block; }
+form.login .inner { padding:15px; }
+
+form.login .field { display:inline-block;margin-right:15px;font-size:12px;font-weight:bold;text-align:right;width:65px;margin-bottom:10px; }
+form.login .value { display:inline-block; }
+form.login .console { margin-bottom:10px; }
+form.login .submit { margin-left:83px; }
+
+form.login .key { width:200px; }
+form.login .password { width:140px; }

@@ -1,0 +1,26 @@
+/* Topic 
+ * context-id:1 = TopicForListing
+ * context-id:2 = TopicForPage
+ */
+ 
+/* TopicForListing */
+article.topic[data-context-id="1"] { border-bottom:1px dotted #ddd;display:block; }
+
+article.topic[data-context-id="1"] > div { padding:10px 10px 0 10px; }
+article.topic[data-context-id="1"] > div > a { float:left; }
+article.topic[data-context-id="1"] > div > h3 { margin-left:65px;font-size:13px;margin-bottom:4px; }
+article.topic[data-context-id="1"] > div > p { color:#808080;margin:2px 0 4px 65px; }
+article.topic[data-context-id="1"] > div > button { float:right;margin-top:-48px; }
+
+
+
+
+/* TopicForPage */
+article.topic[data-context-id="2"] { }
+
+article.topic[data-context-id="2"] div#right-sidebar div.center:first-child { border-bottom:1px dotted #ddd;margin-bottom:12px; }
+article.topic[data-context-id="2"] div#right-sidebar div.center:first-child > button { margin-bottom:15px; }
+
+article.topic[data-context-id="2"] div#right-sidebar .follow { text-align:center;border-top:1px dotted #ddd;border-bottom:1px dotted #ddd;padding-top:10px; }
+article.topic[data-context-id="2"] div#right-sidebar .stats { padding:8px 0 10px 0;border-bottom:1px dotted #ddd; }
+article.topic[data-context-id="2"] div#right-sidebar .stats p { margin:4px 0 4px 0; }

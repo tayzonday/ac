@@ -1,0 +1,11 @@
+
+/* Form Status */
+
+.win { border:1px solid #387a38;background-color:#cfe9cf; }
+.win a { color:#387a38; }
+
+.fail { border:1px solid #c00;background-color:#fbe3e3; }
+.fail a { color:#c00; }
+
+
+
